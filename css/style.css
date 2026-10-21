@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Great+Vibes&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Sans+Old+North+Arabian&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Preahvihear&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech&family=Suwannaphum:wght@100;300;400;700;900&family=Syne+Tactile&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+     font-family: "Bebas Neue", sans-serif;
+     list-style: none;
+     letter-spacing: 2px;
+}
+.nav-logo .logo{
+    width:70px;
+}
+.nav-container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    padding:5px;
+    box-shadow: 10px 4px 10px rgb(186, 185, 185);
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color:rgb(206, 20, 20);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:35px;
+}
+.nav-menu .nav-link {
+    text-decoration: none;
+    display: inline-block;
+    color:rgb(206, 20, 20);
+    transition: 0.3s;
+    padding:10px;
+}
+.nav-menu .nav-link:hover {
+   background-color: rgb(206, 20, 20);
+   color:rgb(255, 253, 253);
+   padding:10px;
+}
+.active{
+    background-color: rgb(206, 20, 20);
+   color:rgb(255, 253, 253)!important;
+   padding:10px;
+}
+.nav-icon{
+    display: flex;
+    gap:30px;
+    font-size: 20px;
+    color:rgb(206, 20, 20)
+}
+.nav-icon .order-btn{
+    padding:5px;
+    margin-right:30px;
+    border: 2px solid rgb(206, 20, 20);
+    transition: .3s;
+
+}
+.nav-icon .order-btn:hover{
+    background:rgb(206, 20, 20);
+    color:white;
+}
+.nav-icon .cart-icon{
+    position:relative;
+}
+.nav-icon span{
+    position: absolute;
+    top:0;
+    background:black;
+    color:white;
+    padding:2px;
+    font-size: 13px;
+    height:15px;
+    width:15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 100%;
+    right:0;
+    left:0;
+    margin-left:20px;
+}
